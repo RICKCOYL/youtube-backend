@@ -22,6 +22,7 @@ const connect = () => {
     });
 };
 
+app.get("/", (req,res) => res.send("hello"))
 //middlewares
 app.use(cookieParser())
 app.use(express.json());
